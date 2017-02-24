@@ -1,2 +1,1 @@
-# green-coffee-example
-Green Coffee Example
+# Green Coffee Example

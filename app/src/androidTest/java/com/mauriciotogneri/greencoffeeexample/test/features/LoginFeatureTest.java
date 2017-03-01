@@ -21,6 +21,10 @@ import java.io.IOException;
 import static com.mauriciotogneri.greencoffeeexample.test.TestSuite.ENGLISH;
 import static com.mauriciotogneri.greencoffeeexample.test.TestSuite.SPANISH;
 
+// auto-generate the steps from gherkin
+// close keyboard shortcut
+// simplify signature: protected void start(GreenCoffeeSteps firstTarget, GreenCoffeeSteps... restTargets)
+// flag to delete app data
 @RunWith(Parameterized.class)
 public class LoginFeatureTest extends GreenCoffeeTest
 {

@@ -47,7 +47,8 @@ android
 
 dependencies
 {
-    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
 
-    androidTestCompile 'com.mauriciotogneri:greencoffee:2.1.1'
+    androidTestCompile 'com.android.support:support-annotations:25.3.1'
+    androidTestCompile 'com.mauriciotogneri:greencoffee:2.4.0'
 }

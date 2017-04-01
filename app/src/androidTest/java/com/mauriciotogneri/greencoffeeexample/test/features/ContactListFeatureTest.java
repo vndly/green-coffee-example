@@ -33,7 +33,7 @@ public class ContactListFeatureTest extends GreenCoffeeTest
         super(scenarioConfig);
     }
 
-    @Parameters
+    @Parameters(name = "{0}")
     public static Iterable<ScenarioConfig> scenarios() throws IOException
     {
         return new GreenCoffeeConfig("testapp")

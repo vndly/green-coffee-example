@@ -3,21 +3,21 @@ apply plugin: 'com.android.application'
 android
 {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '25.0.3'
 
     dexOptions
     {
-        javaMaxHeapSize "2g"
+        javaMaxHeapSize '2g'
     }
 
     defaultConfig
     {
-        applicationId "com.mauriciotogneri.greencoffeeexample"
+        applicationId 'com.mauriciotogneri.greencoffeeexample'
         minSdkVersion 14
         targetSdkVersion 25
         versionCode 1
-        versionName "2.0.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        versionName '2.0.0'
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
 
     buildTypes
@@ -50,5 +50,5 @@ dependencies
     compile 'com.android.support:appcompat-v7:25.3.1'
 
     androidTestCompile 'com.android.support:support-annotations:25.3.1'
-    androidTestCompile 'com.mauriciotogneri:greencoffee:2.4.0'
+    androidTestCompile 'com.mauriciotogneri:greencoffee:2.5.0'
 }

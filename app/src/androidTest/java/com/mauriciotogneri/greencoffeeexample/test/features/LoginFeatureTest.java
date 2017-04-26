@@ -23,7 +23,6 @@ import java.util.Locale;
 import static com.mauriciotogneri.greencoffeeexample.test.TestSuite.ENGLISH;
 import static com.mauriciotogneri.greencoffeeexample.test.TestSuite.SPANISH;
 
-// TODO: auto-generate the steps from gherkin
 @RunWith(Parameterized.class)
 public class LoginFeatureTest extends GreenCoffeeTest
 {

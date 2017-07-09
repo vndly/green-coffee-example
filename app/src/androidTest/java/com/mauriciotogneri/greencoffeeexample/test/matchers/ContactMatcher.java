@@ -7,13 +7,7 @@ public class ContactMatcher extends DataMatcher<Contact, String>
 {
     public ContactMatcher(int resourceId)
     {
-        super(resourceId);
-    }
-
-    @Override
-    public Class<Contact> dataClass()
-    {
-        return Contact.class;
+        super(resourceId, Contact.class);
     }
 
     @Override

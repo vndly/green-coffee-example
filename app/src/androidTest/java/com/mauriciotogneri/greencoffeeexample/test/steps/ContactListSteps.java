@@ -11,17 +11,11 @@ import com.mauriciotogneri.greencoffeeexample.test.matchers.ContactMatcher;
 @SuppressWarnings("unused")
 public class ContactListSteps extends GreenCoffeeSteps
 {
-    private final DataMatcher<Contact, String> dataMatcher;
-
-    public ContactListSteps()
-    {
-        this.dataMatcher = new ContactMatcher(R.id.contacts_list);
-    }
-
     @When("^I select the contact called '([\\w| ]+)'$")
     public void iSelectTheContactCalled$(String username)
     {
-        dataMatcher.withContent(username).click();
+        DataMatcher<Contact, String> dataMatcher = new ContactMatcher(R.id.contacts_list);
+        dataMatcher.with(username).click();
     }
 
     @Then("^I see an empty contact list$")

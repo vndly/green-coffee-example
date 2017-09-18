@@ -2,8 +2,8 @@ apply plugin: 'com.android.application'
 
 android
 {
-    compileSdkVersion 25
-    buildToolsVersion '26.0.0'
+    compileSdkVersion 26
+    buildToolsVersion '26.0.1'
 
     dexOptions
     {
@@ -14,28 +14,10 @@ android
     {
         applicationId 'com.mauriciotogneri.greencoffeeexample'
         minSdkVersion 14
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
-        versionName '2.0.0'
+        versionName '2.9.0'
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
-    }
-
-    buildTypes
-    {
-        debug
-        {
-            debuggable true
-        }
-
-        release
-        {
-            minifyEnabled false
-        }
-    }
-
-    lintOptions
-    {
-        abortOnError false
     }
 
     compileOptions
@@ -47,8 +29,9 @@ android
 
 dependencies
 {
-    compile 'com.android.support:appcompat-v7:25.4.0'
+    compile 'com.android.support:appcompat-v7:26.1.0'
 
-    androidTestCompile 'com.android.support:support-annotations:25.4.0'
-    androidTestCompile 'com.mauriciotogneri:greencoffee:2.8.1'
+    androidTestCompile 'com.android.support:support-annotations:26.1.0'
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
+    androidTestCompile 'com.mauriciotogneri:greencoffee:2.9.0'
 }

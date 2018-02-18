@@ -4,7 +4,6 @@ import com.mauriciotogneri.greencoffee.GreenCoffeeSteps;
 import com.mauriciotogneri.greencoffee.annotations.Then;
 import com.mauriciotogneri.greencoffeeexample.R;
 
-@SuppressWarnings("unused")
 public class DetailsSteps extends GreenCoffeeSteps
 {
     @Then("^I see the detail screen for '([\\w| ]+)'$")

@@ -8,7 +8,6 @@ import com.mauriciotogneri.greencoffeeexample.R;
 import com.mauriciotogneri.greencoffeeexample.model.Contact;
 import com.mauriciotogneri.greencoffeeexample.test.matchers.ContactMatcher;
 
-@SuppressWarnings("unused")
 public class ContactListSteps extends GreenCoffeeSteps
 {
     @When("^I select the contact called '([\\w| ]+)'$")

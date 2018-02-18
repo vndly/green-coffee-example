@@ -7,7 +7,6 @@ import com.mauriciotogneri.greencoffee.annotations.When;
 import com.mauriciotogneri.greencoffeeexample.R;
 import com.mauriciotogneri.greencoffeeexample.database.UserDatabase;
 
-@SuppressWarnings("unused")
 public class LoginSteps extends GreenCoffeeSteps
 {
     private static final String INVALID_USERNAME = "guest";

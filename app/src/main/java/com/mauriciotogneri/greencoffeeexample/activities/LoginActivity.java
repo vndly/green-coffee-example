@@ -1,17 +1,9 @@
 package com.mauriciotogneri.greencoffeeexample.activities;
 
-import android.Manifest;
-import android.Manifest.permission;
-import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.EditText;
 
 import com.mauriciotogneri.greencoffeeexample.R;
@@ -27,25 +19,13 @@ public class LoginActivity extends AppCompatActivity
         setContentView(R.layout.activity_login);
         setTitle(R.string.login_title);
 
-        findViewById(R.id.login_button_doLogin).setOnClickListener(new OnClickListener()
+        findViewById(R.id.login_button_doLogin).setOnClickListener(view ->
         {
-            @Override
-            public void onClick(View view)
-            {
-                EditText username = (EditText) findViewById(R.id.login_input_username);
-                EditText password = (EditText) findViewById(R.id.login_input_password);
+            EditText username = findViewById(R.id.login_input_username);
+            EditText password = findViewById(R.id.login_input_password);
 
-                login(username.getText().toString(), password.getText().toString());
-            }
+            login(username.getText().toString(), password.getText().toString());
         });
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
-        {
-            if (ContextCompat.checkSelfPermission(this, permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED)
-            {
-                ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.WRITE_EXTERNAL_STORAGE}, 0);
-            }
-        }
     }
 
     private void login(String username, String password)

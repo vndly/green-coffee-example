@@ -1,6 +1,7 @@
 package com.mauriciotogneri.greencoffeeexample.adapters;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +25,8 @@ public class ContactAdapter extends ArrayAdapter<Contact>
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent)
+    @NonNull
+    public View getView(int position, View convertView, @NonNull ViewGroup parent)
     {
         View view = convertView;
 
@@ -37,16 +39,16 @@ public class ContactAdapter extends ArrayAdapter<Contact>
 
         if (contact != null)
         {
-            TextView firstName = (TextView) view.findViewById(R.id.contact_name);
+            TextView firstName = view.findViewById(R.id.contact_name);
             firstName.setText(contact.name());
 
-            TextView age = (TextView) view.findViewById(R.id.contact_age);
+            TextView age = view.findViewById(R.id.contact_age);
             age.setText(contact.age());
 
-            TextView weight = (TextView) view.findViewById(R.id.contact_weight);
+            TextView weight = view.findViewById(R.id.contact_weight);
             weight.setText(contact.weight());
 
-            TextView married = (TextView) view.findViewById(R.id.contact_married);
+            TextView married = view.findViewById(R.id.contact_married);
             married.setText(contact.married(getContext()));
         }
 

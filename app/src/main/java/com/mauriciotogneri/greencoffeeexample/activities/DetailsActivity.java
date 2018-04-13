@@ -35,16 +35,16 @@ public class DetailsActivity extends AppCompatActivity
         ContactDatabase contactDatabase = new ContactDatabase();
         Contact contact = contactDatabase.contact(contactId);
 
-        TextView contactName = (TextView) findViewById(R.id.contact_detail_name);
+        TextView contactName = findViewById(R.id.contact_detail_name);
         contactName.setText(contact.name());
 
-        TextView contactAge = (TextView) findViewById(R.id.contact_detail_age);
+        TextView contactAge = findViewById(R.id.contact_detail_age);
         contactAge.setText(contact.age());
 
-        TextView contactWeight = (TextView) findViewById(R.id.contact_detail_weight);
+        TextView contactWeight = findViewById(R.id.contact_detail_weight);
         contactWeight.setText(contact.weight());
 
-        TextView contactMarried = (TextView) findViewById(R.id.contact_detail_married);
+        TextView contactMarried = findViewById(R.id.contact_detail_married);
         contactMarried.setText(contact.married(this));
     }
 }

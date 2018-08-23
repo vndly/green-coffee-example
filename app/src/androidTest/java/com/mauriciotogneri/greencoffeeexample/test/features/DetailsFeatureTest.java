@@ -36,14 +36,18 @@ public class DetailsFeatureTest extends GreenCoffeeTest
     @Parameters(name = "{0}")
     public static Iterable<ScenarioConfig> scenarios() throws IOException
     {
-        return new GreenCoffeeConfig(true)
+        return new GreenCoffeeConfig()
                 .withFeatureFromAssets("assets/details.feature")
+                .takeScreenshotOnFail()
                 .scenarios(ENGLISH, SPANISH);
     }
 
     @Test
     public void test()
     {
-        start(new LoginSteps(), new ContactListSteps(), new DetailsSteps(), new ScreenshotSteps());
+        start(new LoginSteps(),
+              new ContactListSteps(),
+              new DetailsSteps(),
+              new ScreenshotSteps());
     }
 }

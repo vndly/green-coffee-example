@@ -37,8 +37,9 @@ public class LoginFeatureTest extends GreenCoffeeTest
     @Parameters(name = "{0}")
     public static Iterable<ScenarioConfig> scenarios() throws IOException
     {
-        return new GreenCoffeeConfig(true)
+        return new GreenCoffeeConfig()
                 .withFeatureFromAssets("assets/login.feature")
+                .takeScreenshotOnFail()
                 .scenarios(ENGLISH, SPANISH);
     }
 
@@ -46,8 +47,8 @@ public class LoginFeatureTest extends GreenCoffeeTest
     public void test()
     {
         start(new LoginSteps(),
-                new ContactListSteps(),
-                new ScreenshotSteps());
+              new ContactListSteps(),
+              new ScreenshotSteps());
     }
 
     @Override

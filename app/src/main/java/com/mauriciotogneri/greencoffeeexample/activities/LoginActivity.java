@@ -1,8 +1,8 @@
 package com.mauriciotogneri.greencoffeeexample.activities;
 
 import android.os.Bundle;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.widget.EditText;
 
@@ -20,12 +20,12 @@ public class LoginActivity extends AppCompatActivity
         setTitle(R.string.login_title);
 
         findViewById(R.id.login_button_doLogin).setOnClickListener(view ->
-        {
-            EditText username = findViewById(R.id.login_input_username);
-            EditText password = findViewById(R.id.login_input_password);
+                                                                   {
+                                                                       EditText username = findViewById(R.id.login_input_username);
+                                                                       EditText password = findViewById(R.id.login_input_password);
 
-            login(username.getText().toString(), password.getText().toString());
-        });
+                                                                       login(username.getText().toString(), password.getText().toString());
+                                                                   });
     }
 
     private void login(String username, String password)

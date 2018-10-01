@@ -1,6 +1,6 @@
 package com.mauriciotogneri.greencoffeeexample.test.features;
 
-import androidx.test.rule.ActivityTestRule;
+import android.support.test.rule.ActivityTestRule;
 
 import com.mauriciotogneri.greencoffee.GreenCoffeeConfig;
 import com.mauriciotogneri.greencoffee.GreenCoffeeTest;

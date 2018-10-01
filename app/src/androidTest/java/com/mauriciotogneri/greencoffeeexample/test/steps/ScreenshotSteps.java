@@ -1,6 +1,6 @@
 package com.mauriciotogneri.greencoffeeexample.test.steps;
 
-import androidx.test.InstrumentationRegistry;
+import android.support.test.InstrumentationRegistry;
 
 import com.mauriciotogneri.greencoffee.GreenCoffeeSteps;
 import com.mauriciotogneri.greencoffee.annotations.Then;

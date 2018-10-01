@@ -3,7 +3,7 @@ package com.mauriciotogneri.greencoffeeexample.activities;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -46,10 +46,10 @@ public class ContactListActivity extends AppCompatActivity
         {
             listView.setAdapter(new ContactAdapter(this, contacts));
             listView.setOnItemClickListener((parent, view, position, id) ->
-            {
-                Contact contact = (Contact) parent.getItemAtPosition(position);
-                onContactSelected(contact);
-            });
+                                            {
+                                                Contact contact = (Contact) parent.getItemAtPosition(position);
+                                                onContactSelected(contact);
+                                            });
         }
         else
         {

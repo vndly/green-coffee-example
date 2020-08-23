@@ -1,7 +1,5 @@
 package com.mauriciotogneri.greencoffeeexample.test.features;
 
-import android.support.test.rule.ActivityTestRule;
-
 import com.mauriciotogneri.greencoffee.GreenCoffeeConfig;
 import com.mauriciotogneri.greencoffee.GreenCoffeeTest;
 import com.mauriciotogneri.greencoffee.ScenarioConfig;
@@ -19,6 +17,7 @@ import org.junit.runners.Parameterized.Parameters;
 
 import java.io.IOException;
 
+import androidx.test.rule.ActivityTestRule;
 import static com.mauriciotogneri.greencoffeeexample.test.TestSuite.ENGLISH;
 import static com.mauriciotogneri.greencoffeeexample.test.TestSuite.SPANISH;
 

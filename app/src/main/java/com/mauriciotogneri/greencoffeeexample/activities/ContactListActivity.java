@@ -3,7 +3,6 @@ package com.mauriciotogneri.greencoffeeexample.activities;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -14,6 +13,8 @@ import com.mauriciotogneri.greencoffeeexample.database.ContactDatabase;
 import com.mauriciotogneri.greencoffeeexample.model.Contact;
 
 import java.util.List;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ContactListActivity extends AppCompatActivity
 {

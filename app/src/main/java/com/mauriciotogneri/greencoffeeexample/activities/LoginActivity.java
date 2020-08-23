@@ -1,13 +1,14 @@
 package com.mauriciotogneri.greencoffeeexample.activities;
 
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.widget.EditText;
 
 import com.mauriciotogneri.greencoffeeexample.R;
 import com.mauriciotogneri.greencoffeeexample.database.UserDatabase;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity
 {

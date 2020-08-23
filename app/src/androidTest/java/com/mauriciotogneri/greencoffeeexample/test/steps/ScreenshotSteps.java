@@ -1,11 +1,11 @@
 package com.mauriciotogneri.greencoffeeexample.test.steps;
 
-import android.support.test.InstrumentationRegistry;
-
 import com.mauriciotogneri.greencoffee.GreenCoffeeSteps;
 import com.mauriciotogneri.greencoffee.annotations.Then;
 
 import java.io.File;
+
+import androidx.test.InstrumentationRegistry;
 
 public class ScreenshotSteps extends GreenCoffeeSteps
 {

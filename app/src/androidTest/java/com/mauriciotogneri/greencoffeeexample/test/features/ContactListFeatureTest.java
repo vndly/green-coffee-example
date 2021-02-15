@@ -1,5 +1,7 @@
 package com.mauriciotogneri.greencoffeeexample.test.features;
 
+import android.Manifest.permission;
+
 import com.mauriciotogneri.greencoffee.GreenCoffeeConfig;
 import com.mauriciotogneri.greencoffee.GreenCoffeeTest;
 import com.mauriciotogneri.greencoffee.ScenarioConfig;
@@ -17,7 +19,8 @@ import org.junit.runners.Parameterized.Parameters;
 
 import java.io.IOException;
 
-import androidx.test.rule.ActivityTestRule;
+import androidx.test.core.app.ActivityScenario;
+import androidx.test.rule.GrantPermissionRule;
 import static com.mauriciotogneri.greencoffeeexample.test.TestSuite.ENGLISH;
 import static com.mauriciotogneri.greencoffeeexample.test.TestSuite.SPANISH;
 
@@ -25,7 +28,10 @@ import static com.mauriciotogneri.greencoffeeexample.test.TestSuite.SPANISH;
 public class ContactListFeatureTest extends GreenCoffeeTest
 {
     @Rule
-    public ActivityTestRule<LoginActivity> activity = new ActivityTestRule<>(LoginActivity.class);
+    public ActivityScenario<LoginActivity> activity = ActivityScenario.launch(LoginActivity.class);
+
+    @Rule
+    public GrantPermissionRule camera = GrantPermissionRule.grant(permission.CAMERA);
 
     public ContactListFeatureTest(ScenarioConfig scenarioConfig)
     {
